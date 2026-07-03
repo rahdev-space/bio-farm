@@ -1,5 +1,5 @@
 
-import React from "react";
+
 import Image from "next/image";
 import { handleGoogleSignIn} from "@/actions/user";
 import { getSession } from "@/lib/getSession";

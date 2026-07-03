@@ -1,3 +1,7 @@
+
+// register -> hash -> save -> verfiyemail -> login -> jwt -> session -> role -> protectRoutes 
+
+
 import NextAuth, { CredentialsSignin, DefaultSession } from "next-auth";
 import Google from "next-auth/providers/google";
 import connectDb from "./lib/db";
@@ -109,3 +113,4 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
     },
   },
 });
+

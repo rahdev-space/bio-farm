@@ -26,7 +26,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-gradient-to-b from-gray-900 to-black text-white px-6 py-16 relative overflow-hidden">
+    <footer className="bg-linear-to-b from-gray-900 to-black text-white px-6 py-16 relative overflow-hidden">
       {/* Decorative Background Elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-10 w-72 h-72 bg-green-500 rounded-full blur-[100px]"></div>
@@ -39,11 +39,11 @@ export default function Footer() {
           {/* Logo and About */}
           <div className="space-y-6">
             <div className="flex items-center gap-2">
-              <div className="bg-gradient-to-r from-green-500 to-green-400 p-2.5 rounded-xl">
+              <div className="bg-linear-to-r from-green-500 to-green-400 p-2.5 rounded-xl">
                 <FaLeaf className="w-6 h-6 text-white" />
               </div>
               <span
-                className="text-xl font-bold bg-gradient-to-r from-green-400 to-green-300 
+                className="text-xl font-bold bg-linear-to-r from-green-400 to-green-300 
                              bg-clip-text text-transparent"
               >
                 Arkin
