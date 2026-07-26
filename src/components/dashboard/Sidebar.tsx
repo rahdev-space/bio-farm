@@ -90,7 +90,7 @@ const Sidebar = ({ user }: { user: UserType }) => {
           }
         }}
       >
-        <div className={`min-w-[24px] ${isActive ? 'text-green-600' : ''}`}>
+        <div className={`min-w-6 ${isActive ? 'text-green-600' : ''}`}>
           {item.icon}
         </div>
         <AnimatePresence>

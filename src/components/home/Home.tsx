@@ -272,11 +272,11 @@ export default function Home({ blogs, products }: BlogProps & ProductsProps) {
   return (
     <main className="overflow-hidden">
       {/* Hero Section */}
-      <section className="relative min-h-screen bg-gradient-to-tr from-green-50 via-white to-yellow-50 overflow-hidden">
+      <section className="relative min-h-screen bg-linear-to-tr from-green-50 via-white to-yellow-50 overflow-hidden">
         {/* Enhanced Background Elements */}
         <div className="absolute inset-0 opacity-30">
           <div className="absolute top-20 left-10 w-96 h-96 bg-green-200/50 rounded-full blur-[128px] animate-pulse"></div>
-          <div className="absolute bottom-20 right-10 w-[30rem] h-[30rem] bg-yellow-100/50 rounded-full blur-[128px] animate-pulse delay-700"></div>
+          <div className="absolute bottom-20 right-10 w-120 h-120 bg-yellow-100/50 rounded-full blur-[128px] animate-pulse delay-700"></div>
           <div className="absolute top-1/2 left-1/2 w-72 h-72 bg-blue-50/30 rounded-full blur-[96px] animate-pulse delay-1000"></div>
         </div>
 
@@ -294,7 +294,7 @@ export default function Home({ blogs, products }: BlogProps & ProductsProps) {
               <div className="space-y-4">
                 <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight text-gray-900">
                   Nature&apos;s Best
-                  <span className="block text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-green-400">
+                  <span className="block text-transparent bg-clip-text bg-linear-to-r from-green-600 to-green-400">
                     Organic Fertilizer
                   </span>
                 </h1>
@@ -308,7 +308,7 @@ export default function Home({ blogs, products }: BlogProps & ProductsProps) {
               <div className="flex flex-wrap gap-6">
                 <Link
                   href="/products"
-                  className="group relative px-8 py-4 bg-gradient-to-r from-green-600 to-green-500 
+                  className="group relative px-8 py-4 bg-linear-to-r from-green-600 to-green-500 
                                  text-white rounded-xl font-medium shadow-lg shadow-green-500/25
                                  hover:shadow-xl hover:shadow-green-500/40 transition-all duration-300 
                                  flex items-center gap-2 overflow-hidden"
@@ -326,7 +326,7 @@ export default function Home({ blogs, products }: BlogProps & ProductsProps) {
                     />
                   </svg>
                   <div
-                    className="absolute inset-0 bg-gradient-to-r from-green-500 to-green-400 
+                    className="absolute inset-0 bg-linear-to-r from-green-500 to-green-400 
                                 transform scale-x-0 group-hover:scale-x-100 transition-transform 
                                 origin-left duration-300"
                   ></div>
@@ -372,10 +372,10 @@ export default function Home({ blogs, products }: BlogProps & ProductsProps) {
             </div>
 
             {/* Enhanced Right Content */}
-            <div className="relative lg:h-[600px]">
+            <div className="relative lg:h-150">
               <div className="relative h-full rounded-2xl overflow-hidden group">
                 <div
-                  className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent 
+                  className="absolute inset-0 bg-linear-to-t from-black/20 to-transparent 
                               group-hover:from-black/30 transition-all duration-300"
                 ></div>
                 <Image
@@ -424,7 +424,7 @@ export default function Home({ blogs, products }: BlogProps & ProductsProps) {
       </section>
 
       {/* Features Section */}
-      <section className="py-16 lg:py-32 bg-gradient-to-b from-white to-emerald-50/50 relative overflow-hidden">
+      <section className="py-16 lg:py-32 bg-linear-to-b from-white to-emerald-50/50 relative overflow-hidden">
         {/* Decorative elements */}
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-1/4 left-0 w-72 h-72 bg-emerald-100/30 rounded-full blur-3xl"></div>
@@ -443,7 +443,7 @@ export default function Home({ blogs, products }: BlogProps & ProductsProps) {
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
               Why Choose Us
             </span>
-            <h2 className="text-4xl lg:text-5xl font-bold mt-6 mb-6 bg-gradient-to-r from-gray-900 via-emerald-800 to-gray-900 text-transparent bg-clip-text">
+            <h2 className="text-4xl lg:text-5xl font-bold mt-6 mb-6 bg-linear-to-r from-gray-900 via-emerald-800 to-gray-900 text-transparent bg-clip-text">
               Sustainable Growth, Naturally
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto">
@@ -475,7 +475,7 @@ export default function Home({ blogs, products }: BlogProps & ProductsProps) {
                 <div className="relative p-6 lg:p-8">
                   <div className="mb-6">
                     <div
-                      className={`w-14 h-14 rounded-xl bg-gradient-to-r ${feature.color} flex items-center justify-center text-2xl shadow-lg transform transition-transform group-hover:-translate-y-1 duration-300`}
+                      className={`w-14 h-14 rounded-xl bg-linear-to-r ${feature.color} flex items-center justify-center text-2xl shadow-lg transform transition-transform group-hover:-translate-y-1 duration-300`}
                     >
                       {feature.icon}
                     </div>
@@ -497,7 +497,7 @@ export default function Home({ blogs, products }: BlogProps & ProductsProps) {
       <section className="py-16 lg:py-32 bg-white relative overflow-hidden">
         {/* Decorative background elements */}
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-1/2 bg-gradient-to-b from-emerald-50/50 to-transparent"></div>
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-1/2 bg-linear-to-b from-emerald-50/50 to-transparent"></div>
           <div className="absolute -left-48 top-1/4 w-96 h-96 bg-emerald-100/30 rounded-full blur-3xl"></div>
           <div className="absolute -right-48 bottom-1/4 w-96 h-96 bg-green-100/30 rounded-full blur-3xl"></div>
         </div>
@@ -514,7 +514,7 @@ export default function Home({ blogs, products }: BlogProps & ProductsProps) {
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
               Our Process
             </span>
-            <h2 className="text-4xl lg:text-5xl font-bold mt-6 mb-6 bg-gradient-to-r from-gray-900 via-emerald-800 to-gray-900 text-transparent bg-clip-text">
+            <h2 className="text-4xl lg:text-5xl font-bold mt-6 mb-6 bg-linear-to-r from-gray-900 via-emerald-800 to-gray-900 text-transparent bg-clip-text">
               From Seed to Success
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto">
@@ -574,11 +574,11 @@ export default function Home({ blogs, products }: BlogProps & ProductsProps) {
                 }}
               >
                 <div className="relative p-6 lg:p-8 bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
-                  <div className="absolute -top-4 -right-4 w-16 h-16 rounded-2xl bg-gradient-to-r shadow-lg flex items-center justify-center text-2xl transform -rotate-6 group-hover:rotate-0 transition-transform duration-300">
+                  <div className="absolute -top-4 -right-4 w-16 h-16 rounded-2xl bg-linear-to-r shadow-lg flex items-center justify-center text-2xl transform -rotate-6 group-hover:rotate-0 transition-transform duration-300">
                     {process.icon}
                   </div>
                   <div
-                    className={`text-4xl font-black bg-gradient-to-r ${process.gradient} text-transparent bg-clip-text mb-4`}
+                    className={`text-4xl font-black bg-linear-to-r ${process.gradient} text-transparent bg-clip-text mb-4`}
                   >
                     {process.step}
                   </div>
@@ -587,7 +587,7 @@ export default function Home({ blogs, products }: BlogProps & ProductsProps) {
                   </h3>
                   <p className="text-gray-600">{process.description}</p>
                   <div
-                    className={`absolute bottom-0 left-0 h-1 bg-gradient-to-r ${process.gradient} w-0 group-hover:w-full transition-all duration-300 rounded-b-2xl`}
+                    className={`absolute bottom-0 left-0 h-1 bg-linear-to-r ${process.gradient} w-0 group-hover:w-full transition-all duration-300 rounded-b-2xl`}
                   ></div>
                 </div>
               </motion.div>
@@ -603,7 +603,7 @@ export default function Home({ blogs, products }: BlogProps & ProductsProps) {
           >
             <Link
               href="/press-media"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-600 to-green-600 text-white font-semibold rounded-full hover:from-emerald-700 hover:to-green-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-linear-to-r from-emerald-600 to-green-600 text-white font-semibold rounded-full hover:from-emerald-700 hover:to-green-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
             >
               Start Your Journey
               <svg
@@ -625,7 +625,7 @@ export default function Home({ blogs, products }: BlogProps & ProductsProps) {
       </section>
 
       {/* Products Showcase Section */}
-      <section className="py-16 lg:py-32 bg-gradient-to-b from-white to-emerald-50/50 relative overflow-hidden">
+      <section className="py-16 lg:py-32 bg-linear-to-b from-white to-emerald-50/50 relative overflow-hidden">
         {/* Decorative background elements */}
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-1/2 left-1/4 w-72 h-72 bg-emerald-100/30 rounded-full blur-3xl"></div>
@@ -644,7 +644,7 @@ export default function Home({ blogs, products }: BlogProps & ProductsProps) {
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
               Our Products
             </span>
-            <h2 className="text-4xl lg:text-5xl font-bold mt-6 mb-6 bg-gradient-to-r from-gray-900 via-emerald-800 to-gray-900 text-transparent bg-clip-text">
+            <h2 className="text-4xl lg:text-5xl font-bold mt-6 mb-6 bg-linear-to-r from-gray-900 via-emerald-800 to-gray-900 text-transparent bg-clip-text">
               Sustainable Solutions
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto">
@@ -684,7 +684,7 @@ export default function Home({ blogs, products }: BlogProps & ProductsProps) {
                       </span>
                     </div>
                   </div>
-                  <div className="flex flex-col flex-grow p-6">
+                  <div className="flex flex-col grow p-6">
                     <h3 className="text-lg font-bold text-gray-900 mb-2 line-clamp-1">
                       {product.title}
                     </h3>
@@ -725,7 +725,7 @@ export default function Home({ blogs, products }: BlogProps & ProductsProps) {
           >
             <Link
               href="/products"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-600 to-green-600 text-white font-semibold rounded-full hover:from-emerald-700 hover:to-green-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-linear-to-r from-emerald-600 to-green-600 text-white font-semibold rounded-full hover:from-emerald-700 hover:to-green-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
             >
               View All Products
               <svg
@@ -749,7 +749,7 @@ export default function Home({ blogs, products }: BlogProps & ProductsProps) {
       {/* Impact Section */}
       <section className="py-16 lg:py-32 bg-white relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute w-full h-1/2 bg-gradient-to-b from-emerald-50/50 to-transparent"></div>
+          <div className="absolute w-full h-1/2 bg-linear-to-b from-emerald-50/50 to-transparent"></div>
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
@@ -764,7 +764,7 @@ export default function Home({ blogs, products }: BlogProps & ProductsProps) {
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
               Our Impact
             </span>
-            <h2 className="text-4xl lg:text-5xl font-bold mt-6 mb-6 bg-gradient-to-r from-gray-900 via-emerald-800 to-gray-900 text-transparent bg-clip-text">
+            <h2 className="text-4xl lg:text-5xl font-bold mt-6 mb-6 bg-linear-to-r from-gray-900 via-emerald-800 to-gray-900 text-transparent bg-clip-text">
               Growing a Sustainable Future
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto">
@@ -794,9 +794,9 @@ export default function Home({ blogs, products }: BlogProps & ProductsProps) {
                 className="text-center"
               >
                 <div className="relative">
-                  <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/10 to-green-500/10 rounded-2xl transform -rotate-6"></div>
+                  <div className="absolute inset-0 bg-linear-to-r from-emerald-500/10 to-green-500/10 rounded-2xl transform -rotate-6"></div>
                   <div className="relative bg-white p-6 rounded-2xl shadow-xl">
-                    <div className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-emerald-600 to-green-600 text-transparent bg-clip-text mb-2">
+                    <div className="text-4xl lg:text-5xl font-bold bg-linear-to-r from-emerald-600 to-green-600 text-transparent bg-clip-text mb-2">
                       {stat.number}
                     </div>
                     <div className="text-gray-600 font-medium">
@@ -827,7 +827,7 @@ export default function Home({ blogs, products }: BlogProps & ProductsProps) {
                   width={600}
                   height={300}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/30 to-transparent"></div>
+                <div className="absolute inset-0 bg-linear-to-t from-gray-900/30 to-transparent"></div>
               </div>
             </motion.div>
 
@@ -878,7 +878,7 @@ export default function Home({ blogs, products }: BlogProps & ProductsProps) {
       </section>
 
       {/* Farm Calculator Section */}
-      <section className="py-16 lg:py-24 bg-gradient-to-br from-emerald-50 to-white relative overflow-hidden">
+      <section className="py-16 lg:py-24 bg-linear-to-br from-emerald-50 to-white relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-1/2 -translate-y-1/2 left-0 w-96 h-96 bg-emerald-100/30 rounded-full blur-3xl"></div>
           <div className="absolute bottom-0 right-0 w-96 h-96 bg-green-100/30 rounded-full blur-3xl"></div>
@@ -897,7 +897,7 @@ export default function Home({ blogs, products }: BlogProps & ProductsProps) {
                 <Calculator className="w-4 h-4" />
                 Interactive Tool
               </span>
-              <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-gray-900 via-emerald-800 to-gray-900 text-transparent bg-clip-text">
+              <h2 className="text-4xl lg:text-5xl font-bold bg-linear-to-r from-gray-900 via-emerald-800 to-gray-900 text-transparent bg-clip-text">
                 Calculate Your Farm&apos;s Needs
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed">
@@ -934,7 +934,7 @@ export default function Home({ blogs, products }: BlogProps & ProductsProps) {
                 </div>
                 <button
                   onClick={calculateRequirements}
-                  className="w-full px-8 py-4 bg-gradient-to-r from-emerald-600 to-green-600 text-white font-semibold rounded-xl hover:from-emerald-700 hover:to-green-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                  className="w-full px-8 py-4 bg-linear-to-r from-emerald-600 to-green-600 text-white font-semibold rounded-xl hover:from-emerald-700 hover:to-green-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
                 >
                   {isCalculating ? "Calculating..." : "Calculate Requirements"}
                 </button>
@@ -949,7 +949,7 @@ export default function Home({ blogs, products }: BlogProps & ProductsProps) {
               className="relative"
             >
               <div className="relative bg-white rounded-2xl shadow-xl p-8">
-                <div className="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-gradient-to-br from-emerald-500 to-green-500 rounded-2xl transform rotate-6"></div>
+                <div className="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-linear-to-br from-emerald-500 to-green-500 rounded-2xl transform rotate-6"></div>
                 <div className="relative space-y-6">
                   <h3 className="text-2xl font-bold text-gray-900">
                     Recommended Products
@@ -999,7 +999,7 @@ export default function Home({ blogs, products }: BlogProps & ProductsProps) {
                             .toLocaleString()}
                         </span>
                       </div>
-                      <button className="w-full mt-4 px-6 py-3 bg-gradient-to-r from-emerald-600 to-green-600 text-white font-semibold rounded-xl hover:from-emerald-700 hover:to-green-700 transition-all duration-300 transform hover:-translate-y-0.5">
+                      <button className="w-full mt-4 px-6 py-3 bg-linear-to-r from-emerald-600 to-green-600 text-white font-semibold rounded-xl hover:from-emerald-700 hover:to-green-700 transition-all duration-300 transform hover:-translate-y-0.5">
                         Add All to Cart
                       </button>
                     </div>
@@ -1015,7 +1015,7 @@ export default function Home({ blogs, products }: BlogProps & ProductsProps) {
       <div>
         <section className="py-16 lg:py-24 bg-white relative overflow-hidden">
           <div className="absolute inset-0 pointer-events-none">
-            <div className="absolute w-full h-1/2 bg-gradient-to-b from-emerald-50/50 to-transparent"></div>
+            <div className="absolute w-full h-1/2 bg-linear-to-b from-emerald-50/50 to-transparent"></div>
           </div>
 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
@@ -1030,7 +1030,7 @@ export default function Home({ blogs, products }: BlogProps & ProductsProps) {
                 <NewspaperIcon className="w-4 h-4" />
                 Latest Updates
               </span>
-              <h2 className="text-4xl lg:text-5xl font-bold mt-6 mb-6 bg-gradient-to-r from-gray-900 via-emerald-800 to-gray-900 text-transparent bg-clip-text">
+              <h2 className="text-4xl lg:text-5xl font-bold mt-6 mb-6 bg-linear-to-r from-gray-900 via-emerald-800 to-gray-900 text-transparent bg-clip-text">
                 News & Insights
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto">
@@ -1061,14 +1061,14 @@ export default function Home({ blogs, products }: BlogProps & ProductsProps) {
                         width={400}
                         height={300}
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent"></div>
+                      <div className="absolute inset-0 bg-linear-to-t from-gray-900/60 to-transparent"></div>
                       <div className="absolute bottom-4 left-4">
                         <span className="px-3 py-1 bg-white/90 backdrop-blur-sm text-emerald-600 text-sm font-medium rounded-full">
                           {article.categories.map((cat) => cat.name).join(", ")}
                         </span>
                       </div>
                     </div>
-                    <div className="flex flex-col flex-grow p-6">
+                    <div className="flex flex-col grow p-6">
                       <div className="text-sm text-gray-500 mb-2">
                         {getTimeAgo(article.publishedAt)}
                       </div>
@@ -1101,7 +1101,7 @@ export default function Home({ blogs, products }: BlogProps & ProductsProps) {
             >
               <Link
                 href="/blogs"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-600 to-green-600 text-white font-semibold rounded-full hover:from-emerald-700 hover:to-green-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-linear-to-r from-emerald-600 to-green-600 text-white font-semibold rounded-full hover:from-emerald-700 hover:to-green-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
               >
                 View All Blogs
                 <ArrowRightIcon className="w-5 h-5" />
@@ -1112,7 +1112,7 @@ export default function Home({ blogs, products }: BlogProps & ProductsProps) {
       </div>
 
       {/* Newsletter Section */}
-      <section className="py-20 lg:py-40 bg-gradient-to-br from-emerald-900 to-green-900 relative overflow-hidden">
+      <section className="py-20 lg:py-40 bg-linear-to-br from-emerald-900 to-green-900 relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none opacity-20">
           <div className="absolute top-0 left-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
           <div className="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
@@ -1138,7 +1138,7 @@ export default function Home({ blogs, products }: BlogProps & ProductsProps) {
               className="text-4xl lg:text-5xl font-extrabold text-white mb-6 relative"
             >
               Join Our Organic Farming Community
-              <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-emerald-400 to-green-400 rounded-full"></span>
+              <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-linear-to-r from-emerald-400 to-green-400 rounded-full"></span>
             </motion.h2>
 
             <motion.p
@@ -1166,7 +1166,7 @@ export default function Home({ blogs, products }: BlogProps & ProductsProps) {
               <button
                 type="submit"
                 disabled={status === "submitting"}
-                className="px-8 py-3 bg-gradient-to-r from-emerald-500 to-green-500 text-white font-semibold rounded-full hover:from-emerald-600 hover:to-green-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 flex items-center justify-center"
+                className="px-8 py-3 bg-linear-to-r from-emerald-500 to-green-500 text-white font-semibold rounded-full hover:from-emerald-600 hover:to-green-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 flex items-center justify-center"
               >
                 {status === "submitting" ? (
                   <>
